@@ -109,7 +109,6 @@ if "end_date" not in st.session_state:
 selected_uf = st.sidebar.selectbox("Estado", uf_list, index=uf_list.index(st.session_state.selected_uf), key = 'selected_uf')
 
 # Filtro de Município (somente se um estado for selecionado)
-# municipio = None
 if selected_uf != 'Brasil':
     uf_sigla = estado_nome[selected_uf]  # Pegamos a sigla usando o dicionário
     municipios_list = sorted(df[df['uf'] == uf_sigla]['municipio'].unique())
