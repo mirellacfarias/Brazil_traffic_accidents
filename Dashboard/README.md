@@ -1,9 +1,9 @@
-Claro! Aqui está um exemplo de `README.md` para o seu projeto com as instruções de como criar um ambiente virtual, instalar as dependências e rodar o projeto Streamlit:
+# Análise de Acidentes nas estradas brasileiras
+## Projeto Dashboard com Streamlit
 
-```markdown
-# Projeto Streamlit - Análise de Acidentes
+Após as análises exploratória e explanatória, seguimos com a criação de um dashboard com a utilização do Streamlit para visualização dos dados em uma única página, com widgets de filtro para interação do usuário.
 
-Este projeto utiliza o Streamlit para exibir uma análise visual de dados de acidentes. Aqui estão as instruções para rodar o projeto localmente.
+Aqui estão as instruções para rodar o projeto localmente:
 
 ## Pré-requisitos
 
@@ -53,10 +53,10 @@ pip install -r requirements.txt
 Depois de instalar as dependências, você pode rodar o projeto com o Streamlit. Execute o seguinte comando no terminal:
 
 ```bash
-streamlit run streamlit_app.py
+streamlit run dashboard_app.py.py
 ```
 
-Onde `app.py` é o nome do arquivo principal do seu projeto. Se o nome do arquivo for diferente, substitua `app.py` pelo nome correto do arquivo.
+Onde `dashboard_app.py.py` é o nome do arquivo principal do projeto.
 
 ### 4. Acessando a Aplicação
 
@@ -76,16 +76,17 @@ deactivate
 
 ## Estrutura do Projeto
 
-- `app.py`: Arquivo principal onde o Streamlit exibe a análise de dados.
+- `dashboard_app.py.py`: Arquivo principal onde o Streamlit exibe a análise de dados.
 - `requirements.txt`: Lista das bibliotecas necessárias para o funcionamento do projeto.
-- `data/`: Diretório com os arquivos de dados (caso necessário).
+- `data/`: Diretório com a base de dados em formato csv.
+- `utils/`: Diretório com arquivo .py com caminho para imagens utilizadas no dashboard.
+- `modules/`: Diretório com arquivo .py ajustando a barra de navegação do dashboard.
 
-## Bibliotecas Utilizadas
+## Principais Bibliotecas Utilizadas
 
 - `streamlit`: Para criar a interface interativa.
 - `pandas`: Para manipulação de dados.
-- `matplotlib` (opcional): Para criação de gráficos.
-- Outras dependências podem ser listadas no `requirements.txt`.
+- `matplotlib`: Para criação de gráficos.
 
 ## Contribuindo
 
@@ -95,17 +96,10 @@ deactivate
 4. Envie para o repositório remoto (`git push origin minha-feature`).
 5. Abra um pull request.
 
-## Licença
-
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.
-```
-
 ### Explicação:
 
 1. **Ambiente Virtual**: O projeto usa um ambiente virtual para isolar as dependências.
 2. **Instalação das Dependências**: As dependências do projeto estão listadas no arquivo `requirements.txt`. O comando `pip install -r requirements.txt` instala todas as bibliotecas necessárias.
-3. **Rodando o Streamlit**: O comando `streamlit run app.py` inicia a aplicação.
+3. **Rodando o Streamlit**: O comando `streamlit run dashboard_app.py` inicia a aplicação.
 4. **Estrutura do Projeto**: Inclui uma breve descrição da estrutura dos arquivos do projeto.
 5. **Contribuindo**: Instruções sobre como contribuir para o projeto com o fluxo de trabalho usando Git.
-
-Agora, quando você ou outros colaboradores forem rodar o projeto, esse `README` oferece um guia completo para configurar e executar a aplicação.
